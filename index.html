@@ -7,19 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="qr-generator">
-    <h2>QR Code Generator</h2>
-    <input type="text" id="urlInput" placeholder="Enter URL">
-    <button onclick="generateQRCode()">Generate QR Code</button>
-    <div id="generated-qrcode"></div>
-  </div>
+  <div id="container">
+    <div id="qr-generator">
+      <h2>QR Code Generator</h2>
+      <input type="text" id="urlInput" placeholder="Enter URL">
+      <button onclick="generateQRCode()">Generate QR Code</button>
+      <div id="generated-qrcode"></div>
+    </div>
 
-  <footer>
-    <h2>A free tool by 99webdesign</h2>
-    <a href="https://99webdesign.net" target="_blank">https://99webdesign.net</a>
-    <p>About the tool<br>
-      This is a free and open-source QR generation tool based on Rapid API. That said, you may face some limitations while using this tool. In case of any questions, please visit our website - 99webdesign (<a href="https://99webdesign.net" target="_blank">https://99webdesign.net</a>)</p>
-  </footer>
+    <footer>
+      <h2>A free tool by 99webdesign</h2>
+      <a href="https://99webdesign.net" target="_blank">https://99webdesign.net</a>
+      <p>About the tool<br>
+        This is a free and open-source QR generation tool based on Rapid API. That said, you may face some limitations while using this tool. In case of any questions, please visit our website - 99webdesign (<a href="https://99webdesign.net" target="_blank">https://99webdesign.net</a>)</p>
+    </footer>
+  </div>
 
   <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
   <script src="script.js"></script>
