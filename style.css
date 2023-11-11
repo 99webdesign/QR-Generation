@@ -2,21 +2,27 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #qr-generator {
   background-color: #fff;
+  border: 1px solid #ddd; /* Thin border */
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 400px;
-  text-align: center;
 }
 
 input {
@@ -27,18 +33,18 @@ input {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #007bff; /* Blue button */
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0; /* Radius set to 0 */
   cursor: pointer;
   width: calc(100% - 20px);
   box-sizing: border-box;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 #generated-qrcode {
@@ -61,6 +67,6 @@ footer p {
 }
 
 footer a {
-  color: #4caf50;
+  color: #007bff;
   text-decoration: none;
 }
